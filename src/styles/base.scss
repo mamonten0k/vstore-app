@@ -1,0 +1,54 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	@media screen and (max-width: 900px) {
+		font-size: 0.9rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 0.8rem;
+	}
+
+	// background-color: rgb(199, 199, 199);
+
+	font-family: Poppins, sans-serif;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1280px;
+	margin-inline: auto;
+
+	padding: 0 1.4rem;
+}

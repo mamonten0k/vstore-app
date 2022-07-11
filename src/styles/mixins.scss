@@ -1,0 +1,19 @@
+@mixin flex-with-gap($gap) {
+	display: flex;
+
+	column-gap: $gap;
+}
+
+@mixin flex-col-with-gap($gap) {
+	display: flex;
+	flex-direction: column;
+
+	row-gap: $gap;
+}
+
+@mixin flex-with-gap-both($gap-row, $gap-col) {
+	display: flex;
+
+	row-gap: $gap-row;
+	column-gap: $gap-col;
+}
