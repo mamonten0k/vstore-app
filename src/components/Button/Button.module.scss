@@ -1,0 +1,21 @@
+.view {
+	background: transparent;
+	border: none;
+	padding: 0;
+
+	cursor: pointer;
+
+	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&--inner {
+		color: var(--color-highlight);
+	}
+
+	&--outer {
+		font-family: inherit;
+	}
+}
