@@ -2,22 +2,24 @@ import React, { memo } from 'react';
 import styles from './Button.module.scss';
 
 interface Props {
-  title: string;
+  children: HTMLElement | string | React.ReactNode;
   tag: React.ElementType;
-  onClick?: (evt: React.MouseEvent) => void;
+  additionalCss?: string;
+  onClick?: (evt: React.MouseEvent<HTMLElement>) => void;
 }
 
-const Button = memo(({ title, tag: Tag, onClick }: Props) => {
+const Button = ({ children, tag: Tag, additionalCss, onClick }: Props) => {
   styles['view--extended'] = [
     styles.view,
     styles[`view--${Tag === 'a' ? 'outer' : 'inner'}`],
+    additionalCss,
   ].join(' ');
 
   return (
     <Tag className={styles['view--extended']} onClick={onClick}>
-      {title}
+      {children}
     </Tag>
   );
-});
+};
 
 export { Button };
