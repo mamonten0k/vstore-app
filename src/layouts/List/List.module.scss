@@ -1,0 +1,23 @@
+@import "../../styles/mixins.scss";
+
+.wrapper {
+	@include flex-with-gap(1rem);
+
+	@media screen and (max-width: 1100px) {
+		& > :last-child {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 830px) {
+		& > :nth-child(1) {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 580px) {
+		& > :nth-child(2) {
+			display: none;
+		}
+	}
+}
