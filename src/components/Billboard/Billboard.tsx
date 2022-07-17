@@ -30,7 +30,7 @@ const Billboard = memo(({ cover_img, title, link, type }: Props) => {
         </p>
         <div className={styles.utils}>
           <a href=''>More</a>
-          <Button title='Add to cart' type='minify' />
+          <Button tag='button'>Add to cart</Button>
         </div>
       </section>
     </div>
