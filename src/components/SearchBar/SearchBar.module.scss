@@ -1,0 +1,81 @@
+@import "../../styles/mixins.scss";
+
+.layout {
+	position: relative;
+	display: flex;
+
+	padding-top: 2px;
+
+	@media screen and (max-width: 768px) {
+		padding-top: 0px;
+	}
+}
+
+.input {
+	z-index: -1;
+	left: 0;
+	width: 0;
+	height: 2rem;
+
+	visibility: hidden;
+
+	padding: 0.5rem;
+	margin-left: -3.8rem;
+
+	font-size: inherit;
+	outline: none;
+	border: none;
+
+	transition: width 0.3s ease-out;
+
+	&--visible {
+		visibility: visible;
+		width: 18rem;
+
+		z-index: 10;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin-left: -1rem;
+
+		&--visible {
+			margin-left: -3.8rem;
+		}
+	}
+}
+
+.toggle {
+	color: white;
+
+	margin-left: 0;
+
+	&:hover {
+		color: var(--color-highlight);
+		text-decoration: none;
+	}
+}
+
+.close {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+
+	svg {
+		height: 1.2rem;
+		stroke: black;
+		stroke-width: 0.5px;
+	}
+
+	z-index: 11;
+
+	&:hover {
+		svg {
+			fill: var(--color-highlight);
+			stroke: var(--color-highlight);
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		top: 0.4rem;
+	}
+}
