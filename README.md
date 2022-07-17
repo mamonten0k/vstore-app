@@ -1,4 +1,4 @@
-# REACT BOILERPLATE
+# RS SCHOOL TASK ONLINE STORE
 
 ## USED TECHNOLOGIES
 
@@ -19,6 +19,10 @@
 - **assets \-** for public assets as images, svg icons and fonts
 
 - **components \-** for components, used across aplication in templates and by other components
+
+- **modules \-** for modules, used as blocks in pages, modules consist from basic components
+
+- **modules \-** for pages and other handy layouts
 
 - **services \-** for plain JS modules (LocalStorage)
 
