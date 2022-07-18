@@ -1,0 +1,38 @@
+@import "../../styles/mixins.scss";
+
+.layout {
+	display: inline-flex;
+	flex-direction: column;
+
+	background-color: var(--color-soft);
+	@include border-base;
+
+	font-size: 0.9rem;
+
+	img {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 1000px) {
+		max-width: 15rem;
+	}
+}
+
+.info {
+	padding: 2rem 1rem;
+
+	& > *:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+.tools {
+	display: flex;
+	justify-content: space-between;
+
+	text-transform: uppercase;
+}
+
+.title {
+	font-weight: 500;
+}
