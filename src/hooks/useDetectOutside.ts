@@ -10,6 +10,7 @@ export const useDetectOutsideClick = (
         if (!ref.current || ref.current.contains(e.target as HTMLElement)) {
           return;
         }
+        if (ref.current.nodeName === 'INPUT') ref.current.value = '';
         handleOutsideClick(e);
       };
 
