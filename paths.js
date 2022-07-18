@@ -9,7 +9,7 @@ module.exports = {
   appIndexTsx: resolvePath('src/index.tsx'),
   appSrc: resolvePath('src'),
   appTsConfig: resolvePath('tsconfig.json'),
-  appTemplate: resolvePath('node_modules/template/template.html'),
+  appTemplate: resolvePath('template.html'),
   appNodeModules: resolvePath('node_modules'),
   appWebpackCache: resolvePath('node_modules/.cache'),
   appTsBuildInfoFile: resolvePath('node_modules/.cache/tsconfig.tsbuildinfo'),
