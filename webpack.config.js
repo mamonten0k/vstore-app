@@ -22,7 +22,7 @@ module.exports = (env) => {
 
     output: {
       filename: '[name].bundle.js',
-      path: paths.appDist,
+      path: paths.appBuild,
       clean: true,
     },
 

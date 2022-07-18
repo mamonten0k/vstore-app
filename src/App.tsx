@@ -1,5 +1,14 @@
+import { Default } from './layouts';
+import { EntryPage, SearchPage } from './views';
+
+import { sampleData } from './assets/products';
+
 const App = () => {
-  return <h1>React App Boilerplate</h1>;
+  return (
+    <Default>
+      <SearchPage data={sampleData} />
+    </Default>
+  );
 };
 
 export { App };

@@ -5,7 +5,7 @@ const resolvePath = (relativePath) => path.resolve(__dirname, relativePath);
 module.exports = {
   dotenv: resolvePath('.env'),
   appPath: resolvePath('.'),
-  appDist: resolvePath('dist'),
+  appBuild: resolvePath('build'),
   appIndexTsx: resolvePath('src/index.tsx'),
   appSrc: resolvePath('src'),
   appTsConfig: resolvePath('tsconfig.json'),
