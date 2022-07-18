@@ -9,7 +9,7 @@ interface Props {
   link?: string;
 }
 
-const Billboard = memo(({ cover_img, title, link, type }: Props) => {
+const Billboard = memo(({ cover_img, title }: Props) => {
   return (
     <div className={styles.layout}>
       <div className={styles.cover}>
@@ -29,7 +29,7 @@ const Billboard = memo(({ cover_img, title, link, type }: Props) => {
           album to&nbsp;carry a&nbsp;Parental Advisory label.
         </p>
         <div className={styles.utils}>
-          <a href=''>More</a>
+          <Button tag='a'>More</Button>
           <Button tag='button'>Add to cart</Button>
         </div>
       </section>
